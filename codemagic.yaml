@@ -10,6 +10,9 @@ workflows:
       - name: Set up local properties
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+      - name: Set gradlew as executable
+        script: |
+          chmod +x $CM_BUILD_DIR/gradlew
       - name: Accept Android SDK licenses
         script: |
           yes | $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager --licenses
