@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bible Quote Widget</string>
+    <string name="default_quote">The Lord is my shepherd; I shall not want.</string>
+    <string name="default_reference">Psalm 23:1</string>
+    <string name="default_theme">COMFORT</string>
+    <string name="save_quote">Save Quote</string>
+    <string name="configuration_title">Widget Settings</string>
+    <string name="theme_selection_title">Select Quote Theme</string>
+    <string name="appearance_title">Appearance</string>
+    <string name="notification_title">Notifications</string>
+    <string name="saved_quotes_title">Saved Quotes</string>
+    <string name="theme_hope">Hope</string>
+    <string name="theme_love">Love</string>
+    <string name="theme_strength">Strength</string>
+    <string name="theme_motivation">Motivation</string>
+    <string name="theme_wisdom">Wisdom</string>
+    <string name="theme_comfort">Comfort</string>
+    <string name="theme_philosophical">Philosophical</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="enable_notifications">Enable Daily Notifications</string>
+    <string name="notification_time">Notification Time</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="no_saved_quotes">No saved quotes yet</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+</resources>
