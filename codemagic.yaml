@@ -3,6 +3,9 @@ workflows:
     name: Bible Quote Widget Build
     instance_type: mac_mini_m1
     max_build_duration: 30
+      environment:
+      groups:
+        - google_play
       vars:
         PACKAGE_NAME: "com.example.biblequotewidget"
     scripts:
