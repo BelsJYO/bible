@@ -1,0 +1,30 @@
+workflows:
+  android-app:
+    name: Bible Quote Widget Build
+    instance_type: mac_mini_m1
+    max_build_duration: 30
+    environment:
+      android_signing:
+        - keystore_reference
+      groups:
+        - google_play
+      vars:
+        PACKAGE_NAME: "com.example.biblequotewidget"
+    scripts:
+      - name: Set up local properties
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+      - name: Build Android app
+        script: |
+          ./gradlew assembleDebug
+      - name: Build Android release
+        script: |
+          ./gradlew assembleRelease
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk
+      - app/build/outputs/apk/release/*.apk
+      - app/build/outputs/mapping/release/mapping.txt
+    publishing:
+      email:
+        recipients:
+          - user@example.com
